@@ -45,21 +45,21 @@ Sections:<br><hr color="White" size="1" noshade>
 	</div>
 	<br><hr width="490" color="white">
 	<h2>Latest News</h2>
-	<h4>.: 2019-09-09 :. Eqonomize! version 1.4.2 released</h4>
-	Eqonomize! version 1.4.2 includes minor feature improvements and bug fixes.
+	<h4>.: 2020-04-20 :. Eqonomize! version 1.4.3 released</h4>
+	Eqonomize! version 1.4.3 includes bug fixes and a few minor feature improvements.
 	<br><br>
 	Changes:
 	<ul>
-		<li>Make it possible to select multiple separate accounts, categories, tags, descriptions, and payees/payers in reports and charts</li>
-		<li>Option to display absolute values instead of percentages in pie chart</li>
-		<li>Option to save import CSV settings as presets</li>
-		<li>Allow fixed category (add income category selection) when importing both expenses and incomes from CSV file</li>
-		<li>Security quotes import and export (in quotes dialog)</li>
-		<li>Keyboard shortcut and context menu item for current date in date entries and calendar popups</li>
-		<li>Fix segfault when editing scheduled transaction with current date</li>
-		<li>Fix deletion of multiple transactions in ledger</li>
-		<li>Fix set single transaction in edit widget for transaction with multiple accounts/payments and multiple currencies</li>
-		<li>Minor bug fixes and feature improvements</li>
+		<li>Fix monthly recurrence with end date (or occurrence count), when year of end date and start date differs</li>
+		<li>Fix segfault in categories comparison report when payee and quantity properties are hidden</li>
+		<li>Fix order of transactions in ledger when split transaction has same date as single transaction</li>
+		<li>Fix compilation without QtCharts</li>
+		<li>Fix segfault when opening file after creating a new sub category</li>
+		<li>Fix SSL/TSL support (required for exchanges rate updates etc.) in Windows binaries</li>
+		<li>Expand parent category after creation of new sub category</li>
+		<li>Do not change account group when type is selected if custom group is set</li>
+		<li>Use QVariant::fromValue() instead of obsolete qVariantFromValue</li>
+		<li>Replace text with path in svg files</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.
 	<br><div align="right"><a href="news.html">older news...</a></div>
