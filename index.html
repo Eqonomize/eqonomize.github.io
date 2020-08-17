@@ -45,21 +45,22 @@ Sections:<br><hr color="White" size="1" noshade>
 	</div>
 	<br><hr width="490" color="white">
 	<h2>Latest News</h2>
-	<h4>.: 2020-04-20 :. Eqonomize! version 1.4.3 released</h4>
-	Eqonomize! version 1.4.3 includes bug fixes and a few minor feature improvements.
+	<h4>.: 2020-08-17 :. Eqonomize! version 1.5 released</h4>
+	Eqonomize! version 1.5 adds support for links between transactions in addition to bug fixes and some minor feature improvements.
 	<br><br>
 	Changes:
 	<ul>
-		<li>Fix monthly recurrence with end date (or occurrence count), when year of end date and start date differs</li>
-		<li>Fix segfault in categories comparison report when payee and quantity properties are hidden</li>
-		<li>Fix order of transactions in ledger when split transaction has same date as single transaction</li>
-		<li>Fix compilation without QtCharts</li>
-		<li>Fix segfault when opening file after creating a new sub category</li>
-		<li>Fix SSL/TSL support (required for exchanges rate updates etc.) in Windows binaries</li>
-		<li>Expand parent category after creation of new sub category</li>
-		<li>Do not change account group when type is selected if custom group is set</li>
-		<li>Use QVariant::fromValue() instead of obsolete qVariantFromValue</li>
-		<li>Replace text with path in svg files</li>
+		<li>Option to link transactions (indicates that the transactions are related and adds clickable links)</li>
+		<li>Option to join or link refunds to original transaction</li>
+		<li>Split up option for transactions with multiple payments</li>
+		<li>Join transaction as transaction with multiply payments when appropriate (ask when uncertain)</li>
+		<li>Clickable "part of split" label</li>
+		<li>Brazilian Portuguese translation</li>
+		<li>Fix importing if split transactions from eqz file</li>
+		<li>Fix recurrence on day of year</li>
+		<li>Fix potential never ending loop with monthly recurrence that never occurs</li>
+		<li>Fixes for recurring transactions with multiple accounts/payments</li>
+		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.
 	<br><div align="right"><a href="news.html">older news...</a></div>
